@@ -100,7 +100,7 @@
             
             // Draw hour markers - thin lines at each hour position
             ctx.strokeStyle = textColor;
-            ctx.lineWidth = Math.max(1, radius * 0.005);
+            ctx.lineWidth = Math.max(1.5, radius * 0.008);
             
             for (let i = 0; i < 12; i++) {
                 const angle = (i * Math.PI / 6);
@@ -125,7 +125,7 @@
             const secondAngle = second * Math.PI / 30;
             
             // Draw hour hand - thicker
-            ctx.lineWidth = Math.max(2, radius * 0.012);
+            ctx.lineWidth = Math.max(3, radius * 0.018);
             ctx.beginPath();
             ctx.moveTo(centerX, centerY);
             ctx.lineTo(
@@ -135,7 +135,7 @@
             ctx.stroke();
             
             // Draw minute hand - medium thickness
-            ctx.lineWidth = Math.max(1.5, radius * 0.008);
+            ctx.lineWidth = Math.max(2.5, radius * 0.012);
             ctx.beginPath();
             ctx.moveTo(centerX, centerY);
             ctx.lineTo(
@@ -145,7 +145,7 @@
             ctx.stroke();
             
             // Draw second hand - thinnest
-            ctx.lineWidth = Math.max(1, radius * 0.004);
+            ctx.lineWidth = Math.max(1.5, radius * 0.006);
             ctx.beginPath();
             ctx.moveTo(centerX, centerY);
             ctx.lineTo(
